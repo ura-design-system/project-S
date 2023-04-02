@@ -3,70 +3,84 @@ import { Canvas, Meta, Story } from "@storybook/addon-docs";
 <Meta title="Components/Button/html" />
 
 # Button
+Buttons communicate actions that users can take throughout your portal which can be used in places such as modals, forms and cards
+
+## Default Button
 
 <Canvas>
-  <Story name="Default">
-    <button type="button" class="btn btn-primary sgds">
-      Default
-    </button>
+  <Story name="Default" args={{ label: 'Button Name', variant: 'primary', size: 'default', isDisabled: false, icon: '' }} argTypes={{
+    variant: {
+      name: 'variant',
+      description: 'Choice between variant types',
+      options: ['primary', 'secondary', 'danger', 'link'],
+      control: { type: 'radio' }
+    },
+     size: {
+      name: 'size',
+      description: 'Choice between button size',
+      options: ['default','sm', 'lg'],
+      control: { type: 'radio' },
+      
+     },
+     isDisabled: {
+      name: 'disabled State',
+      description: 'Switches between enabled and disabled button',
+      options: ['false', 'true'],
+      control: { type: 'boolean' }
+     },
+     icon: {
+        control: {
+            type: "select",
+            options: {
+                Plus: 'bi bi-plus',
+                Remove: 'bi bi-trash3-fill',
+                Upload: 'bi bi-upload',
+                Arrow: 'bi bi-arrow-90deg-left',
+            },
+        },
+    },
+  }}>
+    {({ label, variant, size, isDisabled, icon }) => (
+      <button disabled={isDisabled} type="button" class={`btn btn-${variant} btn-${size} sgds`} ><i class={`${icon}`}></i> {label}</button>
+    )}
   </Story>
 </Canvas>
 
+
+
 ## Variants
+
+Use any of the available button styles such as `primary` to quickly created styled buttons.
 
 <Canvas>
   <Story name="Variants">
-      <button type="button" class="btn btn-primary sgds me-2 mb-2">
-        Primary
-      </button>
-      <button type="button" class="btn btn-secondary sgds me-2 mb-2">
-        Secondary
-      </button>
-      <button type="button" class="btn btn-danger sgds me-2 mb-2">
-        Danger
-      </button>
-      <button type="button" class="btn btn-outline-primary sgds me-2 mb-2">
-        Outline-primary
-      </button>
-      <button type="button" class="btn btn-outline-secondary sgds me-2 mb-2">
-        Outline-secondary
-      </button>
-      <button type="button" class="btn btn-outline-danger sgds me-2 mb-2">
-        Outline-danger
-      </button>
+      <button type="button" class="btn btn-primary sgds me-2 mb-2">Primary</button>
+      <button type="button" class="btn btn-secondary sgds me-2 mb-2">Secondary</button>
+      <button type="button" class="btn btn-danger sgds me-2 mb-2">Danger</button>
+      <button type="button" class="btn btn-outline-primary sgds me-2 mb-2">Outline-primary</button>
+      <button type="button" class="btn btn-outline-secondary sgds me-2 mb-2">Outline-secondary</button>
+      <button type="button" class="btn btn-outline-danger sgds me-2 mb-2">Outline-danger</button>
       <button type="button" class="btn btn-link">Link</button>
   </Story>
 </Canvas>
 
 ## Sizes
-
+Our default button size is `default`, use the class `btn-sm` or `btn-lg` if you want to use the other sizes button.
 <Canvas>
   <Story name="Sizes">
-    <button type="button" class="btn btn-primary btn-lg sgds me-2 mb-2">
-      Large button
-    </button>
-    <button type="button" class="btn btn-primary sgds me-2 mb-2">
-      Default
-    </button>
-    <button type="button" class="btn btn-primary btn-sm sgds me-2 mb-2">
-      Small button
-    </button>
+    <button type="button" class="btn btn-primary sgds me-2 mb-2">Default</button>
+    <button type="button" class="btn btn-primary btn-sm sgds me-2 mb-2">Small button</button>
+    <button type="button" class="btn btn-primary btn-lg sgds me-2 mb-2">Large button</button>
   </Story>
 </Canvas>
 
 ## Disabled Buttons
-
+Use the `disabled` class to created disabled buttons.
 <Canvas>
   <Story name="Disabled Buttons">
-    <button disabled type="button" class="btn btn-primary sgds me-2 mb-2">
-      Primary button
-    </button>
-    <button disabled type="button" class="btn btn-secondary sgds me-2 mb-2">
-      Secondary button
-    </button>
-    <button disabled type="button" class="btn btn-outline-dark sgds me-2 mb-2">
-      Outline button
-    </button>
+    <button disabled type="button" class="btn btn-primary sgds me-2 mb-2">Primary button</button>
+    <button disabled type="button" class="btn btn-secondary sgds me-2 mb-2">Secondary button</button>
+    <button disabled type="button" class="btn btn-outline-dark sgds me-2 mb-2">Outline button</button>
   </Story>
 </Canvas>
 
@@ -74,11 +88,9 @@ import { Canvas, Meta, Story } from "@storybook/addon-docs";
 
 <Canvas>
   <Story name="Icon Buttons">
-    <button type="button" class="btn btn-primary sgds me-2 mb-2">
-      <i class="bi bi-arrow-90deg-left"></i> Button with icon
+    <button type="button" class="btn btn-primary sgds me-2 mb-2"><i class="bi bi-arrow-90deg-left"></i> Button with icon
     </button>
-    <button type="button" class="btn btn-primary btn-sm sgds me-2 mb-2">
-      <i class="bi bi-arrow-90deg-left"></i> Button with icon
+    <button type="button" class="btn btn-primary btn-sm sgds me-2 mb-2"><i class="bi bi-arrow-90deg-left"></i> Button with icon
     </button>
   </Story>
 </Canvas>
@@ -87,21 +99,56 @@ import { Canvas, Meta, Story } from "@storybook/addon-docs";
 
 <Canvas>
   <Story name="Loading Buttons">
-    <button class="btn btn-primary me-2" type="button" disabled>
-      <span
-        class="spinner-border spinner-border-sm"
-        role="status"
-        aria-hidden="true"
-      ></span>
-      <span class="visually-hidden">Loading...</span>
-    </button>
-    <button class="btn btn-primary" type="button" disabled>
-      <span
-        class="spinner-border spinner-border-sm"
-        role="status"
-        aria-hidden="true"
-      ></span>
-      <span> Loading...</span>
-    </button>
+    <button class="btn btn-primary me-2" type="button" disabled><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+    <span class="visually-hidden">Loading...</span></button>
+    <button class="btn btn-primary" type="button" disabled><span class="spinner-border spinner-border-sm" 
+    role="status" aria-hidden="true"></span>
+    <span> Loading...</span></button>
   </Story>
 </Canvas>
+
+# Anatomy
+
+![Anatomy](https://designsystem.tech.gov.sg/assets/img/component/button/anatomy-button.svg)
+
+1. **Icon (situational):** Serves to give more context to the button. E.g a plus icon to indicate addition or creation.
+2. **Text:** Serves to tell users what the button is being used for. Length of the text is expandable.
+3. **Container:** Takes on the length of the text within the button while maintaing spacing of the overall button.
+
+# Usage guidelines
+
+**Buttons should be used:**
+1. For important actions that you want your users to take. For example submission of a form or editing a page.
+
+**Buttons should not be used:**
+1. When linking pages in a site.
+2. For less important actions. For those types of actions, consider using text links.
+
+# Usability guidelines
+
+**Use primary buttons for actions that go to the next step or for submission**
+
+This makes it clear to the user that a action will happen when they click on the button.
+
+
+**Use outline or secondary buttons for secondary actions**
+
+This will help differentiate it from primary action buttons.
+
+
+**Ensure buttons look clickable**
+
+Do ensure that hover and active states are clear to the user from its static state.
+
+
+**Avoid using too many buttons**
+
+Buttons should be reserved mainly primary actions the users is supposed to take within a page. E.g on a form you may use 3 buttons, 1 primary and 2 secondary but text links for actions within the page.
+
+
+**Keep text within button short**
+
+Text should be as short as possible and with action text to allow the user to easily understand what will happen when the button is clicked. E.g Submit, Next or Download.
+
+
+
