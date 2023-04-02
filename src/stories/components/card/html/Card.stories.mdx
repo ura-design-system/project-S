@@ -1,0 +1,377 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+
+<Meta title="Components/Card/html" />
+
+# Default Card
+<Canvas>
+  <Story name="Default">
+    <div class="card sgds">
+      <div class="card-body">
+    <div class="card-title h3">Card title</div>
+    <p class="">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Click here</a>
+  </div>
+    </div>
+  </Story>
+</Canvas>
+
+## Action cards
+Action cards are card with the `variant="card-action"`. Unlike static display cards, they will have a small box shadow with hover effect as well. See below.
+<Canvas>
+  <Story name="Action">
+    <div class="card sgds" variant="card-action">
+      <div class="card-body">
+        <small class="text-muted">Category</small>
+        <div class="card-title h3">
+          Card Title here
+        </div>
+      </div>
+    </div>
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="Disabled">
+    <div class="card sgds" variant="card-action" disabled>
+      <div class="card-body">
+        <small class="text-muted">Category</small>
+        <div class="card-title h3">
+          Card Title here
+        </div>
+      </div>
+    </div>
+  </Story>
+</Canvas>
+
+## Status Cards
+
+### Pending Status
+<Canvas>
+  <Story name="Pending">
+    <div class="sgds-example-card-grid">
+      <div tabindex="0" variant="card-action" class="card sgds">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <div class="d-md-flex justify-content-between"><div>
+              <div class="badge bg-warning rounded-circle p-2 me-3 mb-2"><i class="bi bi-clock m-0"></i></div></div>
+              <div class="d-block">
+                <div class="card-title h3 m-0">
+                  Payment
+                </div>
+                <p class=" text-muted m-0">25% paid on 8 Aug 2021, 75% due on 1 Nov 2021</p>
+              </div>
+            </div>
+            <div class="card-input">
+              <div class="">
+                <i class="bi bi-chevron-right m-0"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Story>
+</Canvas>
+
+### Overdue Status
+<Canvas>
+  <Story name="Overdue">
+    <div class="sgds-example-card-grid">
+      <div tabindex="0" variant="card-action" class="card sgds">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <div class="d-md-flex justify-content-between"><div>
+              <div class="badge bg-danger rounded-circle p-2 me-3 mb-2"><i class="bi bi-exclamation m-0"></i></div></div>
+              <div class="d-block">
+                <div class="card-title h3 m-0">
+                  Progress Report
+                </div>
+                <p class=" text-muted m-0">Overdue - 3 days overdue</p>
+              </div>
+            </div>
+            <div class="card-input">
+              <div class="">
+                <i class="bi bi-chevron-right m-0"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Story>
+</Canvas>
+
+### No Status
+<Canvas>
+  <Story name="No Status">
+    <div class="sgds-example-card-grid">
+      <div tabindex="0" variant="card-action" class="card sgds">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <div class="d-md-flex justify-content-between"><div>
+              <div class="badge bg-light rounded-circle p-2 me-3 mb-2"><i class="bi bi-circle-fill m-0"></i></div></div>
+              <div class="d-block">
+                <div class="card-title h3 m-0">
+                  Registration
+                </div>
+                <p class=" text-muted m-0">Upcoming</p>
+              </div>
+            </div>
+            <div class="card-input">
+              <div class="">
+                <i class="bi bi-chevron-right m-0"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Story>
+</Canvas>
+
+## Application Status Card
+
+<Canvas>
+  <Story name="Pending Application Card">
+    <div class="sgds-example-card-grid">
+      <div tabindex="0" variant="card-action" class="card sgds">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <div>
+              <div class="d-block">
+                        <small class="text-muted">Building Name</small>
+                <div class="card-title h3 m-0">
+                  Parc Riverview
+                </div>
+                <p class=" text-muted m-0">Reference ID: TS123456789</p>
+                <p class=" text-warning m-0 fw-bold">Pending</p>
+              </div>
+            </div>
+            <div class="card-input">
+              <div class="">
+                <i class="bi bi-chevron-right m-0"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="Approved Application Card">
+    <div class="sgds-example-card-grid">
+      <div tabindex="0" variant="card-action" class="card sgds">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <div>
+              <div class="d-block">
+                        <small class="text-muted">Building Name</small>
+                <div class="card-title h3 m-0">
+                  Orion Speedway
+                </div>
+                <p class=" text-muted m-0">Reference ID: TS123456789</p>
+                <p class=" text-success m-0 fw-bold">Approved</p>
+              </div>
+            </div>
+            <div class="card-input">
+              <div class="">
+                <i class="bi bi-chevron-right m-0"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="Rejected Application Card">
+    <div class="sgds-example-card-grid">
+      <div tabindex="0" variant="card-action" class="card sgds">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <div>
+              <div class="d-block">
+                        <small class="text-muted">Building Name</small>
+                <div class="card-title h3 m-0">
+                  Starbase Hub
+                </div>
+                <p class=" text-muted m-0">Reference ID: TS123456789</p>
+                <p class=" text-danger m-0 fw-bold">Rejected</p>
+              </div>
+            </div>
+            <div class="card-input">
+              <div class="">
+                <i class="bi bi-chevron-right m-0"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Story>
+</Canvas>
+
+## Season Parking Tickets
+
+<Canvas>
+  <Story name="Car Season Parking Ticket">
+    <div class="sgds-example-card-grid">
+      <div tabindex="0" variant="card-action" class="card sgds">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <div class="d-md-flex justify-content-between">
+              <span class="material-symbols-outlined me-3 fs-1 text-muted">
+directions_car
+</span>
+              <div class="d-block">
+                 <small class="text-muted">Car</small>
+                <div class="card-title h3 m-0">
+                  SMN1234A / SNA1227B (Temporary)
+                </div>
+                <p class=" text-muted">Central Parking Place (P001A)</p>
+                <p class="m-0 text-muted">Valid from 1 Jun 2021 - 30 Jun 2021</p>
+                <p class="m-0 text-muted fst-italic">10 Jun 2021 - 12 Jun 2021 (Temporary vehicle only)</p>
+                <span class="sgds badge bg-info border-0 mb-2 rounded-0 rounded-start">GIRO</span><span class="sgds badge badge-light bg-info border-0 me-2 mb-2 rounded-0 rounded-end fw-normal">Auto renewal on 1 Jul 2021</span>
+              </div>
+            </div>
+            <div class="card-input">
+              <div class="">
+                <i class="bi bi-chevron-right m-0"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="Motorcycle Season Parking Ticket">
+    <div class="sgds-example-card-grid">
+      <div tabindex="0" variant="card-action" class="card sgds">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <div class="d-md-flex justify-content-between">
+              <span class="material-symbols-outlined me-3 fs-1 text-muted">
+two_wheeler
+</span>
+              <div class="d-block">
+                 <small class="text-muted">Motorcycle</small>
+                <div class="card-title h3 m-0">
+                  PC123A
+                </div>
+                <p class=" text-muted">Motorcycle Parking Place (M001A)</p>
+                <p class="m-0 text-muted">Valid from 1 Jun 2021 - 30 Jun 2021</p>
+              </div>
+            </div>
+            <div class="card-input">
+              <div class="">
+                <i class="bi bi-chevron-right m-0"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="Heavy Vehicle Season Parking Ticket">
+    <div class="sgds-example-card-grid">
+      <div tabindex="0" variant="card-action" class="card sgds">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <div class="d-md-flex justify-content-between">
+              <span class="material-symbols-outlined me-3 fs-1 text-muted">
+local_shipping
+</span>
+              <div class="d-block">
+                 <small class="text-muted">Heavy Vehicle</small>
+                <div class="card-title h3 m-0">
+                  PC123B
+                </div>
+                <p class=" text-muted">Baymax Heavy Vehicle Park (BY001A)</p>
+                <p class="m-0 text-muted">Valid from 1 Jun 2021 - 30 Jun 2021</p>
+              </div>
+            </div>
+            <div class="card-input">
+              <div class="">
+                <i class="bi bi-chevron-right m-0"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Story>
+</Canvas>
+
+
+## Image Card
+
+<Canvas>
+  <Story name="Image">
+    <div class="card sgds">
+      <img
+        class="card-img-top border-bottom border-light"
+        alt="img alternate text goes here"
+        src="https://digitalservice.ura.gov.sg/uds/img/assets/propertyimg.png"
+      />
+      <div class="card-body">
+        <div class="card-title h3">Card Title</div>
+        <p class="">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+        <a class="card-link" href="#">
+          Go somewhere
+        </a>
+      </div>
+    </div>
+  </Story>
+</Canvas>
+
+## Image Action Card
+
+<Canvas>
+  <Story name="Image Group">
+    <div class="d-flex align-items-stretch gap-3">
+      <div class="card sgds" variant="card-action" >
+      <img
+        class="card-img-top border-bottom border-light"
+        alt="img alternate text goes here"
+        src="https://digitalservice.ura.gov.sg/uds/img/assets/propertyimg.png"
+      />
+      <div class="card-body">
+                         <small class="text-muted">Residential</small>
+        <div class="card-title h3">Dragon Gateway Lane</div>
+        <span class="text-warning fw-bold">Pending (2)</span>
+        <p class="text-muted">
+       Building progress report | Payment
+        </p>
+      </div>
+    </div>
+    <div class="card sgds" variant="card-action" >
+      <img
+        class="card-img-top border-bottom border-light"
+        alt="img alternate text goes here"
+        src="https://digitalservice.ura.gov.sg/uds/img/assets/propertyimg.png"
+      />
+      <div class="card-body">
+                         <small class="text-muted">Residential</small>
+        <div class="card-title h3">Dragon Gateway Lane</div>
+        <span class="text-warning fw-bold">Pending (2)</span>
+        <p class="text-muted">
+       Building progress report | Payment
+        </p>
+      </div>
+    </div>
+    </div>
+  </Story>
+</Canvas>

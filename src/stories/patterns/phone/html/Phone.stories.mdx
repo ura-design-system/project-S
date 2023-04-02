@@ -1,0 +1,103 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+
+<Meta title="Patterns/Phone Number/html" />
+
+# Phone Number
+
+<Canvas>
+  <Story name="Default">
+    <div class="sgds form-group">
+      <label class="form-label" for="phone">
+        Phone Number
+      </label>
+      <div id="phoneHelp" class="form-text">
+        Enter a 8 digit Singapore phone number
+      </div>
+      <div class="input-group">
+        <span class="input-group-text">+65</span>
+        <input
+          class="form-control"
+          type="text"
+          id="phone"
+          autocomplete="tel-local"
+          pattern="[0-9]"
+          maxlength="8"
+        />
+      </div>
+    </div>
+  </Story>
+</Canvas>
+
+## Invalid Error
+
+<Canvas>
+  <Story name="Invalid Error">
+    <div class="sgds form-group">
+      <div class="form-group mb-2 was-validated">
+        <label for="errorWithout" class="form-label">
+          Phone Number
+        </label>
+        <div id="phoneHelp" class="form-text">
+          Enter a 8 digit Singapore phone number
+        </div>
+        <div class="input-group">
+          <span class="input-group-text">+65</span>
+          <input
+            type="text"
+            class="form-control rounded-end"
+            id="errorWithout"
+            aria-describedby="errorWithoutInvalid"
+            placeholder="e.g. 87654321"
+            required
+          />
+          <div id="errorWithoutInvalid" class="invalid-feedback">
+            <i class="bi bi-exclamation-circle"></i> Please enter a valid number
+          </div>
+        </div>
+      </div>
+    </div>
+  </Story>
+</Canvas>
+
+## With Alternative Number(s)
+
+<Canvas>
+  <Story name="With Alternative Number(s)">
+    <div class="sgds form-group">
+      <label class="form-label" for="phone">
+        Phone Number
+      </label>
+      <div id="phoneHelp" class="form-text">
+        Enter a 8 digit Singapore phone number
+      </div>
+      <div class="input-group">
+        <span class="input-group-text">+65</span>
+        <input
+          class="form-control"
+          type="text"
+          id="phone"
+          autocomplete="tel-local"
+          pattern="[0-9]"
+          maxlength="8"
+        />
+      </div>
+      <div class="input-group mt-2">
+        <span class="input-group-text">+65</span>
+        <input
+          class="form-control"
+          type="text"
+          id="phone"
+          autocomplete="tel-local"
+          pattern="[0-9]"
+          maxlength="8"
+        />
+        <button type="button" class="btn btn-outline-danger sgds">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+      <div class="mt-1">
+        <i class="bi bi-plus-lg"></i> <a href="https://github.com/GovTechSG/sgds/tree/v2">Add alternative phone number</a>
+      </div>
+    </div>
+  </Story>
+</Canvas>

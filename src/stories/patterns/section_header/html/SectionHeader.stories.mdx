@@ -1,0 +1,33 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+
+<Meta title="Patterns/Section Header/html" />
+
+# Section Header
+
+<Canvas>
+  <Story name="Default">
+    <div class="h4 text-primary border-bottom border-3 border-primary mb-0">
+      Section header
+    </div>
+    <p>Description of section here</p>
+  </Story>
+</Canvas>
+
+## Collapsible Section Header
+
+<Canvas>
+  <Story name="Collapsible Section Header">
+    <div class="accordion accordion-flush" id="sectionheader">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed text-primary p-0 border-bottom border-3 border-primary rounded-0 fs-4 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        Section header
+      </button>
+    </div>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body p-0"><p>Description of section here</p></div>
+    </div>
+  </div>
+</div>
+  </Story>
+</Canvas>

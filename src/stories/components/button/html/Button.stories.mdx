@@ -1,0 +1,107 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+
+<Meta title="Components/Button/html" />
+
+# Button
+
+<Canvas>
+  <Story name="Default">
+    <button type="button" class="btn btn-primary sgds">
+      Default
+    </button>
+  </Story>
+</Canvas>
+
+## Variants
+
+<Canvas>
+  <Story name="Variants">
+      <button type="button" class="btn btn-primary sgds me-2 mb-2">
+        Primary
+      </button>
+      <button type="button" class="btn btn-secondary sgds me-2 mb-2">
+        Secondary
+      </button>
+      <button type="button" class="btn btn-danger sgds me-2 mb-2">
+        Danger
+      </button>
+      <button type="button" class="btn btn-outline-primary sgds me-2 mb-2">
+        Outline-primary
+      </button>
+      <button type="button" class="btn btn-outline-secondary sgds me-2 mb-2">
+        Outline-secondary
+      </button>
+      <button type="button" class="btn btn-outline-danger sgds me-2 mb-2">
+        Outline-danger
+      </button>
+      <button type="button" class="btn btn-link">Link</button>
+  </Story>
+</Canvas>
+
+## Sizes
+
+<Canvas>
+  <Story name="Sizes">
+    <button type="button" class="btn btn-primary btn-lg sgds me-2 mb-2">
+      Large button
+    </button>
+    <button type="button" class="btn btn-primary sgds me-2 mb-2">
+      Default
+    </button>
+    <button type="button" class="btn btn-primary btn-sm sgds me-2 mb-2">
+      Small button
+    </button>
+  </Story>
+</Canvas>
+
+## Disabled Buttons
+
+<Canvas>
+  <Story name="Disabled Buttons">
+    <button disabled type="button" class="btn btn-primary sgds me-2 mb-2">
+      Primary button
+    </button>
+    <button disabled type="button" class="btn btn-secondary sgds me-2 mb-2">
+      Secondary button
+    </button>
+    <button disabled type="button" class="btn btn-outline-dark sgds me-2 mb-2">
+      Outline button
+    </button>
+  </Story>
+</Canvas>
+
+## Icon Buttons
+
+<Canvas>
+  <Story name="Icon Buttons">
+    <button type="button" class="btn btn-primary sgds me-2 mb-2">
+      <i class="bi bi-arrow-90deg-left"></i> Button with icon
+    </button>
+    <button type="button" class="btn btn-primary btn-sm sgds me-2 mb-2">
+      <i class="bi bi-arrow-90deg-left"></i> Button with icon
+    </button>
+  </Story>
+</Canvas>
+
+## Loading Buttons
+
+<Canvas>
+  <Story name="Loading Buttons">
+    <button class="btn btn-primary me-2" type="button" disabled>
+      <span
+        class="spinner-border spinner-border-sm"
+        role="status"
+        aria-hidden="true"
+      ></span>
+      <span class="visually-hidden">Loading...</span>
+    </button>
+    <button class="btn btn-primary" type="button" disabled>
+      <span
+        class="spinner-border spinner-border-sm"
+        role="status"
+        aria-hidden="true"
+      ></span>
+      <span> Loading...</span>
+    </button>
+  </Story>
+</Canvas>

@@ -1,0 +1,38 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+
+<Meta title="Patterns/Retrieve MyInfo/html" />
+
+# Retrieve MyInfo
+
+<Canvas>
+  <Story name="Default">
+    <div class="container text-center col-auto m-0 p-0">
+      <div class="row">
+        <div class="col-auto px-1">
+          <button type="button" class="btn sgds singpass retrieve-myinfo"></button>
+        </div>
+        <div class="col-auto px-1">
+          <button type="button" class="btn sgds singpass retrieve-myinfo-clear" disabled></button>
+        </div>
+      </div>
+    </div>
+  </Story>
+</Canvas>
+
+## Disabled
+This happens after user had successfully clicked on the "Retrieve MyInfo" button and populated the data. Thus the "Retrieve MyInfo" button will be disabled and the "Clear" button will be active.
+
+<Canvas>
+  <Story name="Disabled">
+    <div class="container text-center col-auto m-0 p-0">
+      <div class="row">
+        <div class="col-auto px-1">
+          <button type="button" class="btn sgds singpass retrieve-myinfo" disabled></button>
+        </div>
+        <div class="col-auto px-1">
+          <button type="button" class="btn sgds singpass retrieve-myinfo-clear"></button>
+        </div>
+      </div>
+    </div>
+  </Story>
+</Canvas>

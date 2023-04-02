@@ -1,0 +1,373 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+
+<Meta title="Components/Table/html" />
+
+# Default
+<Canvas>
+  <Story name="Default">
+    <div class="table-responsive">
+      <table class="table table-sm lh-sm">
+    <thead  class="bg-light">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+ </table>
+    </div>
+  </Story>
+</Canvas>
+
+# Inbox
+Below is the Inbox use case.
+
+<Canvas>
+  <Story name="Inbox">
+    <div class="table-responsive">
+      <table class="table table-hover table-sm lh-sm">
+        <thead class="bg-light">
+          <tr>
+            <th scope="col">From</th>
+            <th scope="col">Subject Title</th>
+            <th scope="col">Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <strong>Admin</strong>
+            </td>
+            <td>
+              <strong>Bold title here (for unread style)</strong>
+              <br/>
+            <small class="text-muted">Subtitle (if any)</small>
+            </td>
+            <td><strong>28 Apr 2022</strong></td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Admin</strong>
+            </td>
+            <td>
+              <strong>Request for progress information</strong>
+              <br/>
+            <small class="text-muted">Developmnet ABC(U/C)</small>
+            </td>
+            <td><strong>28 Apr 2022</strong></td>
+          </tr>
+          <tr>
+            <td>
+              John Lee
+            </td>
+            <td>
+             Application Updates
+              <br/>
+            <small class="text-muted">Developmnet ABC(U/C)</small>
+            </td>
+            <td>24 Apr 2022</td></tr>
+          <tr>
+            <td>
+              Amos Tan
+            </td>
+            <td>
+             Application Successful
+              <br/>
+            <small class="text-muted">Developmnet ABC(U/C)</small>
+            </td>
+            <td>28 Apr 2022</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </Story>
+</Canvas>
+
+## User List Table
+
+<Canvas>
+  <Story name="User List Table">
+    <div class="table-responsive">
+      <table class="table table-hover table-sm">
+        <thead class="bg-light">
+          <tr>
+            <th scope="row">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="checkboxDefault1"
+                />
+              </div>
+            </th>
+            <th scope="col" >Name</th>
+            <th scope="col">Role</th>
+            <th scope="col">Company</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="checkboxDefault1"
+                />
+              </div>
+            </th>
+            <td>John Lee</td>
+            <td>Software Engineer</td>
+            <td>Appletree Pte Ltd</td>
+            <td><button type="button" class="btn btn-primary btn-sm sgds">
+      <i class="bi bi-pencil-fill"></i> <span class="d-none d-sm-none d-md-none d-lg-inline">Edit</span>
+    </button> <button type="button" class="btn btn-outline-danger btn-sm sgds">
+      <i class="bi bi-trash"></i>
+    </button></td>
+          </tr>
+         <tr>
+            <th scope="row">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="checkboxDefault1"
+                />
+              </div>
+            </th>
+            <td>Emily Lai</td>
+            <td>UX Designer</td>
+            <td>Orangetree Pte Ltd</td>
+            <td><button type="button" class="btn btn-primary btn-sm sgds">
+      <i class="bi bi-pencil-fill"></i> <span class="d-none d-sm-none d-md-none d-lg-inline">Edit</span>
+    </button> <button type="button" class="btn btn-outline-danger btn-sm sgds">
+      <i class="bi bi-trash"></i>
+    </button></td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="checkboxDefault1"
+                />
+              </div>
+            </th>
+            <td>Rose Goh</td>
+            <td>DevOps Engineer</td>
+            <td>Appletree Pte Ltd</td>
+            <td><button type="button" class="btn btn-primary btn-sm sgds">
+      <i class="bi bi-pencil-fill"></i> <span class="d-none d-sm-none d-md-none d-lg-inline">Edit</span>
+    </button> <button type="button" class="btn btn-outline-danger btn-sm sgds">
+      <i class="bi bi-trash"></i>
+    </button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </Story>
+</Canvas>
+
+## Status Table
+
+<Canvas>
+  <Story name="Status Table">
+    <div class="table-responsive">
+      <table class="table table-hover table-sm">
+        <thead class="bg-light">
+          <tr>
+            <th scope="col">Application ID</th>
+            <th scope="col">Type</th>
+            <th scope="col">Applicant</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              ABC12635D
+            </td>
+            <td>SPT Renewal</td>
+                        <td>Rebecca Loy</td>
+            <td><span class="sgds badge bg-success border-0 badge-light">Approved</span></td>
+          </tr>
+          <tr>
+            <td>
+              T837923G
+            </td>
+            <td>eAppeal</td>
+                        <td>Roy Chew</td>
+            <td><span class="sgds badge bg-danger border-0 badge-light">Rejected</span></td>
+          </tr>
+          <tr>
+            <td>
+              SCS23878T
+            </td>
+            <td>Reserve Lot</td>
+                        <td>Rebecca Loy</td>
+            <td><span class="sgds badge bg-warning border-0 badge-light">Pending</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </Story>
+</Canvas>
+
+## Documents Table
+
+<Canvas>
+  <Story name="Documents Table">
+    <div class="table-responsive">
+      <table class="table table-hover table-sm">
+        <thead class="bg-light">
+          <tr>
+            <th scope="col" >Filename</th>
+            <th scope="col" >File size</th>
+            <th scope="col">Uploaded by</th>
+            <th scope="col">Date</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">
+              Document1.pdf
+            </th>
+            <td>123kb</td>
+            <td>John Lee</td>
+            <td>1 Feb 2022</td>
+            <td><button type="button" class="btn btn-primary btn-sm sgds">
+      <i class="bi bi-download"></i> <span class="d-none d-sm-none d-md-none d-lg-inline">Download</span>
+    </button> <button type="button" class="btn btn-outline-danger btn-sm sgds">
+      <i class="bi bi-trash"></i>
+    </button></td>
+          </tr>
+          <tr>
+            <th scope="row">
+              Document2.pdf
+            </th>
+            <td>123kb</td>
+            <td>John Lee</td>
+            <td>1 Feb 2022</td>
+            <td><button type="button" class="btn btn-primary btn-sm sgds">
+      <i class="bi bi-download"></i> <span class="d-none d-sm-none d-md-none d-lg-inline">Download</span>
+    </button> <button type="button" class="btn btn-outline-danger btn-sm sgds">
+      <i class="bi bi-trash"></i>
+    </button></td>
+          </tr>
+          <tr>
+            <th scope="row">
+              Document3.pdf
+            </th>
+            <td>123kb</td>
+            <td>John Lee</td>
+            <td>1 Feb 2022</td>
+            <td><button type="button" class="btn btn-primary btn-sm sgds">
+      <i class="bi bi-download"></i> <span class="d-none d-sm-none d-md-none d-lg-inline">Download</span>
+    </button> <button type="button" class="btn btn-outline-danger btn-sm sgds">
+      <i class="bi bi-trash"></i>
+    </button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </Story>
+</Canvas>
+
+## Table with Inputs
+
+<Canvas>
+  <Story name="Table with Inputs">
+    <div class="table-responsive">
+      <table class="table table-hover table-sm">
+        <thead class="bg-light">
+          <tr>
+            <th scope="col" >Field 1</th>
+            <th scope="col" >Field 2</th>
+            <th scope="col">Field 3</th>
+            <th scope="col">Field 4</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">
+              <input type="text" class="form-control form-control-sm" id="defaultWith" minlength="20" aria-describedby="defaultWith" placeholder="Text goes here" />
+            </th>
+            <td><input type="text" class="form-control form-control-sm" id="defaultWith" aria-describedby="defaultWith" placeholder="Text goes here" /></td>
+            <td><select class="form-select form-select-sm me-3 w-auto rounded-2 border">
+      <option></option>
+      <option>10</option>
+      <option>20</option>
+      <option>50</option>
+      </select></td>
+            <td>              <input type="text" class="form-control form-control-sm" id="defaultWith" aria-describedby="defaultWith" placeholder="Text goes here" />
+</td>
+            <td><button type="button" class="btn btn-outline-danger btn-sm sgds">
+      <i class="bi bi-trash"></i>
+    </button></td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <input type="text" class="form-control form-control-sm" id="defaultWith" aria-describedby="defaultWith" placeholder="Text goes here" />
+            </th>
+            <td><input type="text" class="form-control form-control-sm" id="defaultWith" aria-describedby="defaultWith" placeholder="Text goes here" /></td>
+            <td><select class="form-select form-select-sm me-3 w-auto rounded-2 border">
+      <option></option>
+      <option>10</option>
+      <option>20</option>
+      <option>50</option>
+      </select></td>
+            <td>              <input type="text" class="form-control form-control-sm" id="defaultWith" aria-describedby="defaultWith" placeholder="Text goes here" />
+</td>
+            <td><button type="button" class="btn btn-outline-danger btn-sm sgds">
+      <i class="bi bi-trash"></i>
+    </button></td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <input type="text" class="form-control form-control-sm" id="defaultWith" aria-describedby="defaultWith" placeholder="Text goes here" />
+            </th>
+            <td><input type="text" class="form-control form-control-sm" id="defaultWith" aria-describedby="defaultWith" placeholder="Text goes here" /></td>
+            <td><select class="form-select form-select-sm me-3 w-auto rounded-2 border">
+      <option></option>
+      <option>10</option>
+      <option>20</option>
+      <option>50</option>
+      </select></td>
+            <td>              <input type="text" class="form-control form-control-sm" id="defaultWith" aria-describedby="defaultWith" placeholder="Text goes here" />
+</td>
+            <td><button type="button" class="btn btn-outline-danger btn-sm sgds">
+      <i class="bi bi-trash"></i>
+    </button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </Story>
+</Canvas>

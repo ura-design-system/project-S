@@ -1,0 +1,52 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+
+<Meta title="Pages/Email/html" />
+
+# Email Templates
+
+## Email Design and Content Guidelines
+- Do not include call-to-action (e.g. buttons with masked text) in the email content.
+- Text links/hyperlinks are allowed if the exact url is spelled out (e.g. www.ura.gov.sg) and only can link to content pages (e.g. Homepage)
+- For long urls (not ideal to fully spelt out), please use [go.gov.sg](https://go.gov.sg/) shortener.
+
+## Generic Email Template
+Use this generic email as a starter for emails.
+You can <a href="emails/Generic_Email.zip" download target="_blank"><strong>download the html (including images folder) file here</strong></a>. 
+
+<Canvas>
+<Story
+    name="Generic Email"
+    parameters={{
+      layout: "fullscreen",
+    }}
+  >
+<iframe src='emails/Generic_Email/index.html' width='100%' height='1050px'></iframe> 
+</Story></Canvas>
+
+##  Submission Acknowledgement
+You can use this acknowledgement email for submission notification of eservices.
+You can <a href="emails/Acknowledgement_Email.zip" download target="_blank"><strong>download the html (including images folder) file here</strong></a>. 
+
+<Canvas>
+<Story
+    name="Submission Acknowledgement"
+    parameters={{
+      layout: "fullscreen",
+    }}
+  >
+<iframe src='emails/Acknowledgement_Email/index.html' width='100%' height='1230px'></iframe> 
+</Story></Canvas>
+
+##  Welcome Email
+You can use this as the welcome email of your app when a new user sign up. The header background color can be your application brand color. e.g. in the case of ePlanner is it <span style={{background:'#006ae4', color: '#FFF'}}>blue (#006ae4)</span>
+You can <a href="emails/Welcome_Email.zip" download target="_blank"><strong>download the html (including images folder) file here</strong></a>. 
+
+<Canvas>
+<Story
+    name="Welcome Email"
+    parameters={{
+      layout: "fullscreen",
+    }}
+  >
+<iframe src='emails/Welcome_Email/index.html' width='100%' height='900px'></iframe> 
+</Story></Canvas>

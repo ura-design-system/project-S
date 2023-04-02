@@ -1,0 +1,107 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+
+<Meta title="Components/Pagination/html" />
+
+# Pagination
+The default view with texts and arrows.
+<Canvas>
+  <Story name="Default">
+<nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item disabled"><a class="page-link" href="#"><i class="bi bi-chevron-left"></i><span class=" d-none d-sm-none d-md-none d-lg-inline">Previous</span></a></li>
+      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">4</a></li>
+      <li class="page-item"><a class="page-link" href="#">5</a></li>
+      <li class="page-item"><a class="page-link" href="#">...</a></li>
+      <li class="page-item"><a class="page-link" href="#">12</a></li>
+      <li class="page-item"><a class="page-link" href="#"><span class=" d-none d-sm-none d-md-none d-lg-inline">Next</span><i class="bi bi-chevron-right"></i></a></li>
+    </ul>
+  </nav>
+  </Story>
+</Canvas>
+
+## Pagination small
+Smaller version of pagination
+<Canvas>
+  <Story name="Small">
+<nav aria-label="Page navigation example">
+    <ul class="pagination pagination-sm">
+      <li class="page-item disabled"><a class="page-link" href="#"><i class="bi bi-chevron-left"></i><span class=" d-none d-sm-none d-md-none d-lg-inline">Previous</span></a></li>
+      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">4</a></li>
+      <li class="page-item"><a class="page-link" href="#">5</a></li>
+      <li class="page-item"><a class="page-link" href="#">...</a></li>
+      <li class="page-item"><a class="page-link" href="#">12</a></li>
+      <li class="page-item"><a class="page-link" href="#"><span class=" d-none d-sm-none d-md-none d-lg-inline">Next</span><i class="bi bi-chevron-right"></i></a></li>
+    </ul>
+  </nav>
+  </Story>
+</Canvas>
+
+## Pagination with arrows only
+
+<Canvas>
+  <Story name="With arrows only">
+<nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item disabled"><a class="page-link" href="#"><i class="bi bi-chevron-left"></i></a></li>
+      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">4</a></li>
+      <li class="page-item"><a class="page-link" href="#">5</a></li>
+      <li class="page-item"><a class="page-link" href="#">...</a></li>
+      <li class="page-item"><a class="page-link" href="#">12</a></li>
+      <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-right"></i></a></li>
+    </ul>
+  </nav>     
+  </Story>
+</Canvas>
+
+## Compact
+
+<Canvas>
+  <Story name="Compact">
+    <div class="d-flex align-items-center">
+    <p class="my-0 me-2">Items per page:</p>
+    <select class="form-select me-3 w-auto rounded-2 border">
+      <option>5</option>
+      <option>10</option>
+      <option>20</option>
+      <option>50</option>
+</select>
+   <p class="my-0 me-2">Showing 1-10 of 120</p> 
+   <nav aria-label="Page navigation example">
+    <ul class="pagination my-0 me-2">
+      <li class="page-item disabled"><a class="page-link" href="#"><i class="bi bi-chevron-left"></i></a></li>
+      <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-right"></i></a></li>
+    </ul>
+  </nav> </div>   
+  </Story>
+</Canvas>
+
+## Compact small
+
+<Canvas>
+  <Story name="Compact small">
+    <div class="d-flex align-items-center">
+    <small class="my-0 me-2">Items per page:</small>
+    <select class="form-select form-select-sm me-3 w-auto rounded-2 border">
+      <option>5</option>
+      <option>10</option>
+      <option>20</option>
+      <option>50</option>
+</select>
+   <small class="my-0 me-2">Showing 1-10 of 120</small> 
+   <nav aria-label="Page navigation example">
+    <ul class="pagination my-0 me-2 pagination-sm">
+      <li class="page-item disabled"><a class="page-link" href="#"><i class="bi bi-chevron-left"></i></a></li>
+      <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-right"></i></a></li>
+    </ul>
+  </nav> </div>   
+  </Story>
+</Canvas>

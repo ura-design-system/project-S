@@ -1,0 +1,77 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+
+<Meta title="Components/Date/html" />
+
+# Date
+
+<Canvas>
+  <Story name="Default">
+    <div class="sgds form-group mb-2">
+      <label for="defaultWith" class="form-label">
+        Date
+      </label>
+      <div id="defaultWithHelp" class="form-text">
+        This is the hint text
+      </div>
+      <div class="sgds">
+        <input
+          type="date"
+          class=" form-control"
+          id="defaultWith"
+          aria-describedby="defaultWith"
+        />
+      </div>
+    </div>
+  </Story>
+</Canvas>
+
+## Error (with validation)
+
+<Canvas>
+  <Story name="Error (with validation)">
+    <div class="sgds form-group mb-2 was-validated">
+      <label for="errorWith" class="form-label">
+        Date
+      </label>
+      <div id="errorWithHelp" class="form-text">
+        This is the hint text
+      </div>
+      <div class="sgds">
+        <input
+          type="date"
+          class="form-control"
+          id="errorWith"
+          aria-describedby="errorWithHelp errorWithInvalid"
+          required
+        />
+        <div id="errorWithInvalid" class="invalid-feedback">
+          <i class="bi bi-exclamation-circle"></i> Error message
+        </div>
+      </div>
+    </div>
+  </Story>
+</Canvas>
+
+## Disabled
+
+<Canvas>
+  <Story name="Disabled">
+    <div class="sgds form-group has-feedback mb-2">
+      <label for="disabledWith" class="form-label">
+        Date
+      </label>
+      <div id="disabledWithHelp" class="form-text">
+        This is the hint text
+      </div>
+      <div class="sgds">
+        <input
+          type="date"
+          class="form-control"
+          id="disabledWith"
+          aria-describedby="disabledWithHelp"
+          disabled
+        />
+      </div>
+    </div>
+  </Story>
+</Canvas>

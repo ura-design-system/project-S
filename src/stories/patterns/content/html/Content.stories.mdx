@@ -1,0 +1,312 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+
+<Meta title="Patterns/Content/html" />
+
+# Content
+
+## Content with two columns
+
+<Canvas>
+  <Story name="Two Columns">
+    <div class="container py-3">
+      <h2 id="about">About</h2>
+      <p>
+        This paragraph will describe what this service is all about. E.g. This
+        service is an integrated platform offering a digitalised end-to-end
+        service journey for you and your service partners to conveniently access
+        the administration and regulatory services.
+      </p>
+    </div>
+    <div class="container px-5">
+      <div class="row">
+        <div class="col-lg-6 text-center p-auto">
+          <img
+            class="container-fluid"
+            src="https://digitalservice.ura.gov.sg/uds/img/assets/heroimg.webp"
+            alt="people around laptop with documentation"
+          />
+          <p class="h3 my-3">
+            <strong>Sub Topic 1</strong>
+          </p>
+          <p>
+            Description of the sub topic above here. E.g. this service can help
+            you with achieving this and this.
+          </p>
+        </div>
+        <div class="col-lg-6 text-center p-auto">
+          <img
+            class="container-fluid"
+            src="https://digitalservice.ura.gov.sg/uds/img/assets/heroimg.webp"
+            alt="people around laptop with documentation"
+          />
+          <p class="h3 my-3">
+            <strong>Sub Topic 2</strong>
+          </p>
+          <p>
+            Description of the sub topic above here. E.g. this service can help
+            you with achieving this and this.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center container p-8">
+      <a type="button" class="btn btn-primary sgds" href="#">
+        Login to get started
+      </a>
+    </div>
+  </Story>
+</Canvas>
+
+## Content with Side Nav
+## Mobile 
+<Canvas>
+  <Story name="With Side Nav">
+    <div class="dropdown sticky-top d-inline-flex d-lg-none w-100 shadow-sm">
+      <button
+        class="sgds btn bg-light rounded-0 w-100"
+        type="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Floating Mobile Side Nav<i class="bi bi-chevron-down"></i>
+      </button>
+      <ul class="dropdown-menu w-100 rounded-0">
+        <aside aria-label="Side Navigation Container">
+          <nav class="sidenav sgds list-unstyled open1">
+            <ul class="list-unstyled">
+              <li class="sidenav-item">
+                <a role="button" class="sgds btn active" href="#submenu_a">
+                  Sub menu A
+                </a>
+              </li>
+              <li class="sidenav-item">
+                <a role="button" class="sgds btn inactive" href="#submenu_a">
+                  Sub menu B
+                </a>
+              </li>
+              <li class="sidenav-item">
+                <button
+                  class="sgds btn collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseExampleA"
+                  aria-expanded="false"
+                  aria-controls="collapseExampleA"
+                >
+                  Sub menu C<i class="bi bi-chevron-down"></i>
+                </button>
+                <div
+                  class="collapse"
+                  id="collapseExampleA"
+                  data-bs-parent=".open1"
+                >
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="nav-link" data-value="no-icon">
+                        Sub menu item
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link active" data-value="no-icon">
+                        Sub menu item
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link" data-value="no-icon">
+                        Sub menu item
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidenav-item">
+                <button
+                  class="sgds btn collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseExampleB"
+                  aria-expanded="false"
+                  aria-controls="collapseExampleB"
+                >
+                  Sub menu D<i class="bi bi-chevron-down"></i>
+                </button>
+                <div
+                  class="collapse"
+                  id="collapseExampleB"
+                  data-bs-parent=".open1"
+                >
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="nav-link" data-value="no-icon">
+                        Sub menu item
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link" data-value="no-icon">
+                        Sub menu item
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link" data-value="no-icon">
+                        Sub menu item
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidenav-item">
+                <button
+                  class="sgds btn collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseExampleC"
+                  aria-expanded="false"
+                  aria-controls="collapseExampleC"
+                >
+                  Sub menu E<i class="bi bi-chevron-down"></i>
+                </button>
+                <div
+                  class="collapse"
+                  id="collapseExampleC"
+                  data-bs-parent=".open1"
+                >
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="nav-link" data-value="no-icon">
+                        Sub menu item
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link" data-value="no-icon">
+                        Sub menu item
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link" data-value="no-icon">
+                        Sub menu item
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+      </ul>
+    </div>
+    
+    
+    <div class="container py-3">
+      <div class="row">
+        <div class="col-3 sticky-top sidenav py-3 d-none d-sm-none d-md-none d-lg-block">
+          <aside aria-label="Side Navigation Container">
+            <nav class="sidenav sgds list-unstyled open2">
+    <li class="sidenav-item">
+        <button class="sgds btn collapsed active" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampleD"
+            aria-expanded="false" aria-controls="collapseExampleD" >
+            Sub menu
+            <i class="bi bi-chevron-down"></i>
+        </button>
+        <div class="collapse show" id="collapseExampleD" data-bs-parent=".open2">
+            <ul class="list-unstyled">
+                <li><a href="#" class="nav-link" data-value="no-icon">Sub menu item</a></li>
+                <li><a href="#" class="nav-link active" data-value="no-icon">Sub menu item</a></li>
+                <li><a href="#" class="nav-link" data-value="no-icon">Sub menu item</a></li>
+            </ul>
+        </div>
+    </li>
+    <li class="sidenav-item">
+        <button class="sgds btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampleE"
+            aria-expanded="false" aria-controls="collapseExampleE" >
+            Sub menu
+            <i class="bi bi-chevron-down"></i>
+        </button>
+        <div class="collapse" id="collapseExampleE" data-bs-parent=".open2">
+            <ul class="list-unstyled">
+                <li><a href="#" class="nav-link" data-value="no-icon">Sub menu item</a></li>
+                <li><a href="#" class="nav-link" data-value="no-icon">Sub menu item</a></li>
+                <li><a href="#" class="nav-link" data-value="no-icon">Sub menu item</a></li>
+            </ul>
+        </div>
+    </li>
+    <li class="sidenav-item">
+        <button class="sgds btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampleF"
+            aria-expanded="false" aria-controls="collapseExampleF" >
+            Sub menu
+            <i class="bi bi-chevron-down"></i>
+        </button>
+        <div class="collapse" id="collapseExampleF" data-bs-parent=".open2">
+            <ul class="list-unstyled">
+                <li><a href="#" class="nav-link" data-value="no-icon">Sub menu item</a></li>
+                <li><a href="#" class="nav-link" data-value="no-icon">Sub menu item</a></li>
+                <li><a href="#" class="nav-link" data-value="no-icon">Sub menu item</a></li>
+            </ul>
+        </div>
+    </li>
+</nav>
+          </aside>
+        </div>
+        <div class="col py-3">
+          <h2>Overview</h2>
+          <div
+            role="alert"
+            class="fade d-flex align-items-center alert alert-primary show sgds"
+          >
+            <i class="bi bi-info-circle me-4"></i>
+            <div>
+              <div class="alert-heading h4">You do not have any records</div>
+              <p>
+                You do not have any records currently. You may submit a request
+                to get started
+              </p>
+              <button type="button" class="btn btn-primary sgds">
+                Some action button
+              </button>
+            </div>
+          </div>
+          <h2 id="submenu_a" class="mt-8">
+            Subtopic A
+          </h2>
+          <p>Some description of subtopic A</p>
+          <button type="button" class="btn btn-primary sgds">
+            Some action button
+          </button>
+          <h2 id="submenu_b" class="mt-8">
+            Subtopic B
+          </h2>
+          <p>Some description of subtopic B</p>
+          <button type="button" class="btn btn-primary sgds">
+            Some action button
+          </button>
+        </div>
+      </div>
+    </div>
+  </Story>
+</Canvas>
+
+## 404
+
+<Canvas>
+  <Story name="404 content">
+    <div class="container py-3">
+      <h2>Looking for something?</h2>
+      <br />
+      <p>
+        The page you are looking for cannot be ound. Please check that you have
+        keyed in the correct URL.
+      </p>
+      <p>
+        Go back to the{" "}
+        <a href="" class="uds-link">
+          homepage
+        </a>{" "}
+        and try navigating from there.
+      </p>
+      <img
+        class="w-25"
+        src="https://digitalservice.ura.gov.sg/uds/img/svg/searchmap.svg"
+        alt="people around laptop with documentation"
+      />
+    </div>
+  </Story>
+</Canvas>

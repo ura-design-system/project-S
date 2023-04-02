@@ -1,0 +1,755 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+
+<Meta title="Pages/Home Page" />
+
+# Home Page
+
+Below show the page made up of various patterns and components from the design system. You may click on the "Canvas" tab to view in fullscreen mode.
+
+<Canvas isColumn withSource="open" withToolbar>
+  <Story id="components-official-government-header-html--default-story" />
+  <Story id="components-main-navigation-html--logged-in" />
+  <Story id="patterns-page-header-html--home" />
+  <Story id="patterns-content-html--with-side-nav" />
+  <Story id="components-footer-html--default-story" />
+</Canvas>
+
+<Canvas>
+  <Story
+    name="html"
+    parameters={{
+      layout: "fullscreen",
+    }}
+  >
+    <sgds-masthead></sgds-masthead>
+    <nav class="sgds navbar navbar-expand-lg container">
+      <a class="navbar-brand" href="#">
+        <img
+          src="https://digitalservice.ura.gov.sg/uds/img/svg/ura_logo_w_mission_left_color.svg"
+          alt="Home"
+          height="60"
+        />
+      </a>
+      <ul class="navbar-nav ms-auto d-inline-flex d-lg-none flex-row">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">
+            <i class="bi bi-envelope h4 mb-0"></i>
+            <span class="position-relative top-0 start-10 translate-middle p-2 bg-danger border border-light rounded-circle">
+              <span class="visually-hidden">unread messages</span>
+            </span>
+            <span class="visually-hidden-focusable">Inbox</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">
+            <i class="bi bi-bell h4 mb-0"></i>
+            <span class="position-relative top-0 start-10 translate-middle badge rounded-pill bg-danger">
+              2<span class="visually-hidden">New alerts</span>
+            </span>
+            <span class="visually-hidden-focusable">Notifications</span>
+          </a>
+        </li>
+        <li class="nav-item sgds dropdown">
+          <a
+            class="nav-link sgds dropdown-toggle"
+            href=""
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="bi bi-person h3 mb-0"></i>
+            <span class="d-none d-lg-block">Profile</span>
+          </a>
+          <ul
+            class="dropdown-menu position-absolute"
+            aria-labelledby="navbarDropdown"
+          >
+            <li>
+              <a class="dropdown-item" href="">
+                Profile
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="">
+                Settings
+              </a>
+            </li>
+            <div class="dropdown-divider"></div>
+            <li>
+              <a class="dropdown-item" href="">
+                Logout
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item align-self-center d-none d-lg-block"></li>
+      </ul>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="">
+              Link
+            </a>
+          </li>
+          <li class="nav-item sgds dropdown">
+            <a
+              class="nav-link sgds dropdown-toggle"
+              href=""
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Dropdown<i class="bi bi-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="">
+                  Action
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="">
+                  Another Action
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="">
+                  Something
+                </a>
+              </li>
+              <div class="dropdown-divider"></div>
+              <li>
+                <a class="dropdown-item" href="">
+                  Seperated Link
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item sgds dropdown has-megamenu">
+            <a
+              class="nav-link sgds dropdown-toggle"
+              href="#"
+              id="megamenu"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Megamenu<i class="bi bi-chevron-down"></i>
+            </a>
+            <div class="dropdown-menu megamenu p-3" aria-labelledby="megamenu">
+              <div class="d-flex justify-content-start">
+                <div>
+                  <b>
+                    Co-create innovative digital solutions with the Government
+                  </b>
+                  <p>
+                    Discover events, blogs, open-source technologies and other
+                    collaboration opportunities
+                  </p>
+                </div>
+                <div>
+                  <a class="dropdown-item" href="">
+                    Features
+                  </a>
+                  <a class="dropdown-item" href="">
+                    Features
+                  </a>
+                  <a class="dropdown-item" href="">
+                    Features
+                  </a>
+                </div>
+                <div>
+                  <a class="dropdown-item" href="#">
+                    Features
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    Features
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    Features
+                  </a>
+                </div>
+                <div>
+                  <a class="dropdown-item" href="#">
+                    Features
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    Features
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    Features
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto d-none d-sm-none d-md-none d-lg-flex">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">
+              <i class="bi bi-envelope h4 mb-0"></i>
+              <span class="position-relative top-0 start-10 translate-middle p-2 bg-danger border border-light rounded-circle">
+                <span class="visually-hidden">unread messages</span>
+              </span>
+              <span class="visually-hidden-focusable">Inbox</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">
+              <i class="bi bi-bell h4 mb-0"></i>
+              <span class="position-relative top-0 start-10 translate-middle badge rounded-pill bg-danger">
+                2<span class="visually-hidden">New alerts</span>
+              </span>
+              <span class="visually-hidden-focusable">Notifications</span>
+            </a>
+          </li>
+          <li class="nav-item sgds dropdown">
+            <a
+              class="nav-link sgds dropdown-toggle"
+              href=""
+              id="navbarDropdownProfile"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="bi bi-person h3 mb-0"></i>
+              Profile
+            </a>
+            <ul
+              class="dropdown-menu position-absolute"
+              aria-labelledby="navbarDropdownProfile"
+            >
+              <li>
+                <a class="dropdown-item" href="">
+                  Profile
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="">
+                  Settings
+                </a>
+              </li>
+              <div class="dropdown-divider"></div>
+              <li>
+                <a class="dropdown-item" href="">
+                  Logout
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item align-self-center d-none d-lg-block"></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="sgds bg-light py-4">
+      <div class="container">
+        <h1>Welcome, John</h1>
+        <p class="m-0">Appletee Pte Ltd</p>
+      </div>
+    </section>
+    <div class="dropdown sticky-top d-inline-flex d-lg-none w-100 shadow-sm">
+      <button
+        class="sgds btn bg-light rounded-0 w-100"
+        type="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Floating Mobile Side Nav<i class="bi bi-chevron-down"></i>
+      </button>
+      <ul class="dropdown-menu w-100 rounded-0">
+        <aside aria-label="Side Navigation Container">
+          <nav class="sidenav sgds list-unstyled open1">
+            <ul class="list-unstyled">
+              <li class="sidenav-item">
+                <a role="button" class="sgds btn active" href="#submenu_a">
+                  Sub menu A
+                </a>
+              </li>
+              <li class="sidenav-item">
+                <a role="button" class="sgds btn inactive" href="#submenu_a">
+                  Sub menu B
+                </a>
+              </li>
+              <li class="sidenav-item">
+                <button
+                  class="sgds btn collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseExampleA"
+                  aria-expanded="false"
+                  aria-controls="collapseExampleA"
+                >
+                  Sub menu C<i class="bi bi-chevron-down"></i>
+                </button>
+                <div
+                  class="collapse"
+                  id="collapseExampleA"
+                  data-bs-parent=".open1"
+                >
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="nav-link" data-value="no-icon">
+                        Sub menu item
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link active" data-value="no-icon">
+                        Sub menu item
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link" data-value="no-icon">
+                        Sub menu item
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidenav-item">
+                <button
+                  class="sgds btn collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseExampleB"
+                  aria-expanded="false"
+                  aria-controls="collapseExampleB"
+                >
+                  Sub menu D<i class="bi bi-chevron-down"></i>
+                </button>
+                <div
+                  class="collapse"
+                  id="collapseExampleB"
+                  data-bs-parent=".open1"
+                >
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="nav-link" data-value="no-icon">
+                        Sub menu item
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link" data-value="no-icon">
+                        Sub menu item
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link" data-value="no-icon">
+                        Sub menu item
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidenav-item">
+                <button
+                  class="sgds btn collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseExampleC"
+                  aria-expanded="false"
+                  aria-controls="collapseExampleC"
+                >
+                  Sub menu E<i class="bi bi-chevron-down"></i>
+                </button>
+                <div
+                  class="collapse"
+                  id="collapseExampleC"
+                  data-bs-parent=".open1"
+                >
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="nav-link" data-value="no-icon">
+                        Sub menu item
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link" data-value="no-icon">
+                        Sub menu item
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link" data-value="no-icon">
+                        Sub menu item
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+      </ul>
+    </div>
+    <div class="container py-3">
+      <div class="row">
+        <div class="col-3 sticky-top sidenav py-3 d-none d-sm-none d-md-none d-lg-block">
+          <aside aria-label="Side Navigation Container">
+            <nav class="sidenav sgds list-unstyled open2">
+              <li class="sidenav-item">
+                <button
+                  class="sgds btn collapsed active"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseExampleD"
+                  aria-expanded="false"
+                  aria-controls="collapseExampleD"
+                >
+                  Sub menu
+                  <i class="bi bi-chevron-down"></i>
+                </button>
+                <div
+                  class="collapse show"
+                  id="collapseExampleD"
+                  data-bs-parent=".open2"
+                >
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="nav-link" data-value="no-icon">
+                        Sub menu item
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link active" data-value="no-icon">
+                        Sub menu item
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link" data-value="no-icon">
+                        Sub menu item
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidenav-item">
+                <button
+                  class="sgds btn collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseExampleE"
+                  aria-expanded="false"
+                  aria-controls="collapseExampleE"
+                >
+                  Sub menu
+                  <i class="bi bi-chevron-down"></i>
+                </button>
+                <div
+                  class="collapse"
+                  id="collapseExampleE"
+                  data-bs-parent=".open2"
+                >
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="nav-link" data-value="no-icon">
+                        Sub menu item
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link" data-value="no-icon">
+                        Sub menu item
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link" data-value="no-icon">
+                        Sub menu item
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidenav-item">
+                <button
+                  class="sgds btn collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseExampleF"
+                  aria-expanded="false"
+                  aria-controls="collapseExampleF"
+                >
+                  Sub menu
+                  <i class="bi bi-chevron-down"></i>
+                </button>
+                <div
+                  class="collapse"
+                  id="collapseExampleF"
+                  data-bs-parent=".open2"
+                >
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="nav-link" data-value="no-icon">
+                        Sub menu item
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link" data-value="no-icon">
+                        Sub menu item
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link" data-value="no-icon">
+                        Sub menu item
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </nav>
+          </aside>
+        </div>
+        <div class="col py-3">
+          <h2>Overview</h2>
+          <div
+            role="alert"
+            class="fade d-flex align-items-center alert alert-primary show sgds"
+          >
+            <i class="bi bi-info-circle me-4"></i>
+            <div>
+              <div class="alert-heading h4">You do not have any records</div>
+              <p>
+                You do not have any records currently. You may submit a request
+                to get started
+              </p>
+              <button type="button" class="btn btn-primary sgds">
+                Some action button
+              </button>
+            </div>
+          </div>
+          <h2 id="submenu_a" class="mt-8">
+            Subtopic A
+          </h2>
+          <p>Some description of subtopic A</p>
+          <button type="button" class="btn btn-primary sgds">
+            Some action button
+          </button>
+          <h2 id="submenu_b" class="mt-8">
+            Subtopic B
+          </h2>
+          <p>Some description of subtopic B</p>
+          <button type="button" class="btn btn-primary sgds">
+            Some action button
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer class="sgds footer">
+      <section class="footer-top">
+        <div class="container">
+          <div class="row footer-header">
+            <div class="col col-lg-6 col-md-12">
+              <div class="title">
+                This is the name of your portal/digital service
+              </div>
+              <div class="description">
+                This is the description of your portal/digital service.
+              </div>
+            </div>
+          </div>
+          <div class="row footer-items">
+            <div class="col-xxl-2 col-md-4 mb-3">
+              <div class="title">Column 1</div>
+              <ul class="links">
+                <li>
+                  <a href="">About Us</a>
+                </li>
+                <li>
+                  <a href="">This is a super long link</a>
+                </li>
+                <li>
+                  <a href="">Test</a>
+                </li>
+                <li>
+                  <a href="">Test</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-xxl-2 col-md-4 mb-3">
+              <div class="title">Column 2</div>
+              <ul class="links">
+                <li>
+                  <a href="">About Us</a>
+                </li>
+                <li>
+                  <a href="">This is a super long link</a>
+                </li>
+                <li>
+                  <a href="">Test</a>
+                </li>
+                <li>
+                  <a href="">Test</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-xxl-2 col-md-4 mb-3">
+              <div class="title">Column 3</div>
+              <ul class="links">
+                <li>
+                  <a href="">About Us</a>
+                </li>
+                <li>
+                  <a href="">This is a super long link</a>
+                </li>
+                <li>
+                  <a href="">Test</a>
+                </li>
+                <li>
+                  <a href="">Test</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-xxl-2 col-md-4 mb-3">
+              <div class="title">Column 4</div>
+              <ul class="links">
+                <li>
+                  <a href="">About Us</a>
+                </li>
+                <li>
+                  <a href="">This is a super long link</a>
+                </li>
+                <li>
+                  <a href="">Test</a>
+                </li>
+                <li>
+                  <a href="">Test</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-xxl-2 col-md-4 mb-3">
+              <div class="title">Column 5</div>
+              <ul class="links">
+                <li>
+                  <a href="">About Us</a>
+                </li>
+                <li>
+                  <a href="">This is a super long link</a>
+                </li>
+                <li>
+                  <a href="">Test</a>
+                </li>
+                <li>
+                  <a href="">Test</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-xxl-2 col-md-4 mb-3">
+              <div class="title">Column 6</div>
+              <ul class="links">
+                <li>
+                  <a href="">About Us</a>
+                </li>
+                <li>
+                  <a href="">This is a super long link</a>
+                </li>
+                <li>
+                  <a href="">Test</a>
+                </li>
+                <li>
+                  <a href="">Test</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row footer-contact-links">
+            <div class="col">
+              <div class="d-flex justify-content-lg-end">
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.ura.gov.sg/Corporate/Contact-Us"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Contact
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.ura.gov.sg/feedbackWeb/contactus_feedback.jsp"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Feedback
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.reach.gov.sg/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Reach.gov.sg
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer-bottom">
+        <div class="container">
+          <div class="row footer-mandatory-links">
+            <div class="col">
+              <ul>
+                <li>
+                  <a
+                    href="https://tech.gov.sg/report_vulnerability"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Report Vulnerability
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.ura.gov.sg/Corporate/Privacy-Statement"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Privacy Statement
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.ura.gov.sg/Corporate/Terms-of-Use"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Terms of use
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row footer-copyrights">
+            <div class="col">
+              <div class="d-flex justify-content-lg-end">
+                © 2022 Government of Singapore
+              </div>
+              <div class="d-flex justify-content-lg-end">
+                Last Updated 08 Feb 2022
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </Story>
+</Canvas>

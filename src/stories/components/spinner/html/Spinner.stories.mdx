@@ -1,0 +1,64 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+
+<Meta title="Components/Spinner/html" />
+
+# Spinner
+
+<Canvas>
+  <Story name="Default">
+    <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </Story>
+</Canvas>
+
+## Small
+
+<Canvas>
+  <Story name="Small">
+    <div
+      class="spinner-border text-primary spinner-border-sm me-4"
+      role="status"
+    >
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </Story>
+</Canvas>
+
+## Placement
+
+<Canvas>
+  <Story name="Placement">
+    <div class="d-flex align-items-center bg-light py-2 px-3">
+      <strong>Loading...</strong>
+      <div
+        class="spinner-border text-primary ms-auto spinner-border-sm"
+        role="status"
+        aria-hidden="true"
+      ></div>
+    </div>
+  </Story>
+</Canvas>
+
+## Button
+
+<Canvas>
+  <Story name="Button">
+    <button class="btn btn-primary me-2" type="button" disabled>
+      <span
+        class="spinner-border spinner-border-sm"
+        role="status"
+        aria-hidden="true"
+      ></span>
+      <span class="visually-hidden">Loading...</span>
+    </button>
+    <button class="btn btn-primary" type="button" disabled>
+      <span
+        class="spinner-border spinner-border-sm"
+        role="status"
+        aria-hidden="true"
+      ></span>
+      <span> Loading...</span>
+    </button>
+  </Story>
+</Canvas>

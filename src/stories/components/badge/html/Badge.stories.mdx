@@ -1,0 +1,95 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+
+<Meta title="Components/Badge/html" />
+
+# Badge
+
+<Canvas>
+  <Story name="Default">
+    <span class="sgds badge bg-primary">
+      <i class="bi bi-star-fill left"></i>With icon
+    </span>
+  </Story>
+</Canvas>
+
+## Variants
+
+<Canvas>
+  <Story name="Variants">
+    <span class="sgds badge bg-primary me-2 mb-2">
+      <i class="bi bi-star-fill left"></i>With icon
+    </span>
+    <span class="sgds badge bg-primary me-2 mb-2">
+      With icon<i class="bi bi-chevron-right right"></i>
+    </span>
+    <span class="sgds badge bg-primary me-2 mb-2">Primary</span>
+    <span class="sgds badge bg-secondary me-2 mb-2">Secondary</span>
+    <span class="sgds badge bg-success me-2 mb-2">Success</span>
+    <span class="sgds badge bg-danger me-2 mb-2">Danger</span>
+    <span class="sgds badge bg-warning me-2 mb-2">Warning</span>
+    <span class="sgds badge bg-info me-2 mb-2">Info</span>
+    <span class="sgds badge bg-light text-dark me-2 mb-2">Light</span>
+    <span class="sgds badge bg-dark me-2 mb-2">Dark</span>
+  </Story>
+</Canvas>
+
+## Light
+
+<Canvas>
+  <Story name="Light">
+    <span class="sgds badge badge-light bg-primary me-2 mb-2">
+      <i class="bi bi-star-fill left"></i>With icon
+    </span>
+    <span class="sgds badge badge-light bg-primary me-2 mb-2">Primary</span>
+    <span class="sgds badge badge-light bg-secondary me-2 mb-2">Secondary</span>
+    <span class="sgds badge badge-light bg-success me-2 mb-2">Success</span>
+    <span class="sgds badge badge-light bg-danger me-2 mb-2">Danger</span>
+    <span class="sgds badge badge-light bg-warning me-2 mb-2">Warning</span>
+    <span class="sgds badge badge-light bg-info me-2 mb-2">Info</span>
+    <span class="sgds badge badge-light bg-light me-2 mb-2">Light</span>
+  </Story>
+</Canvas>
+
+## Status
+Status badges e.g. "Approved", "Rejected" and "Pending" are without borders.
+<Canvas>
+  <Story name="Status">
+    <span class="sgds badge badge-light bg-success border-0 me-2 mb-2">Active</span>
+    <span class="sgds badge badge-light bg-success border-0 me-2 mb-2">Approved</span>
+    <span class="sgds badge badge-light bg-danger border-0 me-2 mb-2">Rejected</span>
+    <span class="sgds badge badge-light bg-warning border-0 me-2 mb-2">Pending</span>
+    <span class="sgds badge badge-light bg-primary border-0 me-2 mb-2">Published</span>
+    <span class="sgds badge badge-light bg-secondary border-0 me-2 mb-2">In Transit</span>
+    <span class="sgds badge badge-light bg-light border-0 me-2 mb-2">Draft</span>
+    <span class="sgds badge badge-light bg-light border-0 me-2 mb-2 opacity-50">Inactive</span>
+    <span class="sgds badge badge-light bg-light border-0 me-2 mb-2 opacity-50">Expired</span>
+    <span class="sgds badge badge-light bg-light border-0 me-2 mb-2 opacity-50">Early Termination</span>
+  </Story>
+</Canvas>
+
+## Button Badge
+
+<Canvas>
+  <Story name="Button Badge">
+<div class="sgds btn btn-primary me-2 mb-2">Testing <span class="sgds badge bg-light text-dark">99</span></div>
+<div class="sgds btn btn-primary btn-lg me-2 mb-2">Testing <span class="sgds badge bg-light text-dark">99</span></div>
+<button type="button" class="sgds btn btn-primary position-relative me-4 mb-2">
+    Inbox
+    <span class="sgds position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+      99+
+      <span class="visually-hidden">unread messages</span>
+    </span>
+  </button>
+  <button type="button" class="sgds btn btn-primary position-relative  me-2 mb-2">
+    Profile
+    <span class="sgds position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+      <span class="visually-hidden">New alerts</span>
+    </span>
+  </button>
+  <i class="bi bi-bell position-relative fs-4 me-2 mb-2">
+    <span class="sgds position-absolute top-0 start-100 translate-middle p-2 bg-warning border border-light rounded-circle">
+      <span class="visually-hidden">New alerts</span>
+    </span>
+  </i>
+  </Story>
+</Canvas>

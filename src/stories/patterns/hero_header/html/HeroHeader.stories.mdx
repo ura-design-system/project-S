@@ -1,0 +1,64 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+
+<Meta title="Patterns/Hero Header/html" />
+
+# Hero Header
+
+<Canvas>
+  <Story name="Hero Header">
+    <div class="sgds bg-light pb-0 pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1>Portal Service Name</h1>
+            <p>Some subtitle / description here.</p>
+            <div class="text-center col-auto m-0 p-0">
+              <div class="row">
+                <div class="col-auto px-1">
+                  <p class="m-0 text-center">
+                    <strong>Individual Users</strong>
+                  </p>
+                  <button type="button" class="btn sgds singpass singpass-btn"></button>
+                </div>
+                <div class="col-auto px-1">
+                  <p class="m-0 text-center">
+                    <strong>Business Users</strong>
+                  </p>
+                  <button type="button" class="btn sgds singpass singpass-btn"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-5 d-none d-md-block">
+            <img
+              class="container-fluid p-0"
+              src="https://digitalservice.ura.gov.sg/uds/img/assets/sgskyline.svg"
+              alt="people around laptop with documentation"
+            />
+          </div>
+        </div>
+        <div class="row pt-5">
+          <a
+            class="text-center text-decoration-none lh-sm"
+            role="button"
+            href="#about"
+          >
+            Learn more <br />
+            <i class="bi bi-chevron-compact-down text-center"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="d-grid">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1439 79">
+        <title>wave</title>
+        <path
+          id="wave"
+          class="bg-light"
+          d="M0,247.52985S305,300,552,300s503-52.47015,634-52.47015S1439,300,1439,300V221H0Z"
+          transform="translate(0 -221)"
+        ></path>
+      </svg>
+    </div>
+  </Story>
+</Canvas>

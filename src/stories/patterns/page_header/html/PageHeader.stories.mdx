@@ -1,0 +1,65 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+
+<Meta title="Patterns/Page Header/html" />
+
+# Page Header
+
+<Canvas>
+  <Story name="Default">
+    <section class="sgds bg-light py-4">
+      <div class="container">
+        <nav class="sgds" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="#">
+                <i class="bi bi-house"></i>
+              </a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#">Level 1</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#">Level 2</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Apply for Season Parking
+            </li>
+          </ol>
+        </nav>
+        <h1>Apply for Season Parking</h1>
+        <p class="m-0">
+          <strong>
+            <i class="bi bi-clock"></i> 10 mins
+          </strong>{" "}
+          estimated time to complete
+        </p>
+      </div>
+    </section>
+  </Story>
+</Canvas>
+
+## Home / Welcome Page Header
+
+<Canvas>
+  <Story name="Home">
+    <section class="sgds bg-light py-4">
+        <div class="container">
+          <h1>Welcome, John</h1>
+          <p class="m-0">Appletee Pte Ltd</p>
+        </div>
+      </section>
+  </Story>
+</Canvas>
+
+## Page not found
+
+<Canvas>
+  <Story name="Page not found">
+    <section class="sgds bg-light py-4">
+        <div class="container">
+          <h1>Page not found</h1>
+        </div>
+      </section>
+  </Story>
+</Canvas>
+

@@ -1,0 +1,65 @@
+import { Meta } from '@storybook/addon-docs';
+
+<Meta title="Introduction/2. Setup" />
+
+
+# Setup
+
+Below are instructions on quick setup guide taking reference from the [Singapore Government Design System (SGDS) Installation Guide](https://www.designsystem.tech.gov.sg/get-started/installation). 
+
+## CSS
+
+```html
+<head>
+...
+<!--SGDS with URA design language CSS (incorporating SASS Customization)-->
+<link rel="stylesheet" href="https://digitalservice.ura.gov.sg/uds/css/sgds-ura.css?v=2.2" />
+
+<!--Inter font family-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+<!--Bootstrap icons-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+<!--Material icons-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<!-- URA favicon -->
+<link rel="icon" type="image/x-icon" href="https://digitalservice.ura.gov.sg/uds/img/ura_logo.ico">
+
+<!-- URA Home screen icon -->
+<link rel="apple-touch-icon" href="https://digitalservice.ura.gov.sg/uds/img/ura_icon_square.png">
+...
+</head>
+```
+## JS
+To be put outside the body tag.
+```html
+<body>
+  ...
+</body>
+
+<!--To be outside of body tag-->
+
+<!--Official Government Header (Masthead)-->
+<script type="module" src="https://cdn.jsdelivr.net/gh/ura-design-system/web-components@main/js/sgds-masthead.js"></script>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://digitalservice.ura.gov.sg/uds/js/bootstrap@5.1.3/bootstrap.bundle.min.js"></script>
+
+```
+
+## SASS Customization for URA design language.
+##### [FOR INTERNAL USE ONLY] URA design system developers may use this method to explore or add on new overrides to the basic styles.
+
+We use SASS to customize SGDS to the URA design language. Refer to [here](https://www.designsystem.tech.gov.sg/get-started/customise-with-sass) or [here](https://react.designsystem.tech.gov.sg/index.html?path=/docs/install--page) for information to customize the SGDS to URA design language using sass.
+
+For ease of use, the SASS is complied to a compressed css with a relative path as shown above.
+
+For internal URA design system developers with access rights, you may also refer to the `sgds-ura.scss` [file here](https://gitlab.com/ura6/uds/-/blob/main/src/scss/sgds-ura.scss).
+
+You can also <a href="sgds-ura.css" target="_blank">download the latest minified sgds-ura.css here.</a>. 
+
+For internal developers, you may access the [UDS code repository](https://gitlab.com/ura6/uds) as necessary.
